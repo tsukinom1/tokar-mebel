@@ -33,6 +33,9 @@ const BlogList = () => {
                     },992: {
                         width: 992,
                         slidesPerView: 3,
+                    },1250: {
+                        width: 1250,
+                        slidesPerView: 3,
                     },
                 }}
             >
