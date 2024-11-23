@@ -1,0 +1,13 @@
+.type-img{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+.type-title{
+    padding-left: calc(5% + 0.75rem);
+}
+.form-select{
+    margin: 0 auto;
+    width: 90%;
+    border: 1px solid var(--orange);
+}

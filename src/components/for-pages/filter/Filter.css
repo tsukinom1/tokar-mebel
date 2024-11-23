@@ -1,0 +1,11 @@
+.label:hover{
+    color: var(--orange);
+}
+@media (max-width: 992px){
+    .filter-flex{
+        display: flex;
+    }
+    #priceRange{
+        width: 80%
+    }
+}

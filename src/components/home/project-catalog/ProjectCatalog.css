@@ -1,0 +1,20 @@
+
+.custom-background{
+    background-image: url('../../../assets/home/pavilion-back.png');
+    background-position-x: 220px;
+    background-repeat: no-repeat;
+}
+@media (max-width: 1200px) {
+    .custom-background {
+        background-position-x: 0;
+        background-size: 120%;
+    }
+}
+
+@media (max-width: 992px) {
+    .custom-background {
+        background-image: none;
+    }
+}
+
+

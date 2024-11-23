@@ -1,0 +1,113 @@
+.detail-info-container {
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    align-items: stretch; /* Растягиваем дочерние элементы по высоте */
+    height: auto; /* Базовая высота контейнера */
+}
+
+/* Основной слайдер */
+.main-swiper {
+    flex: 3;
+    height: 100%; /* Базовая высота */
+}
+
+/* Основное изображение */
+.main-image {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    height: 100%; /* Изображение занимает всю высоту контейнера */
+    object-fit: contain; /* Сохраняет пропорции */
+}
+
+/* Боковой слайдер */
+.thumb-swiper {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Центрируем миниатюры по вертикали */
+    height: 100%; /* Базовая высота */
+}
+
+/* Стили для миниатюр */
+.thumb-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumb-image {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    filter: blur(2px) brightness(1);
+    transition: filter 0.5s ease-in-out;
+}
+
+/* Активный слайд */
+.swiper-slide-thumb-active .thumb-image {
+    filter: blur(0) brightness(1);
+}
+
+/* Медиа-запрос для ширины экрана от 1200px */
+@media (min-width: 1200px) {
+    .main-swiper, .thumb-swiper {
+        height: 550px; /* Фиксированная высота для слайдеров */
+    }
+    .swiper-slide{
+        padding: 20px;
+    }
+    .thumb-image {
+        width: 90%; /* Миниатюры занимают всю ширину бокового слайдера */
+    }
+}
+
+@media (max-width: 1200px) {
+    .thumb-swiper {
+        min-height: 250px;
+        max-height: 380px;
+    }
+    .thumb-image {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .detail-info-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .thumb-swiper {
+        min-height: 150px;
+        max-height: 250px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .thumb-swiper .swiper-slide {
+        width: 32%; /* Для 4 миниатюр, оставляем небольшие отступы */
+        height: auto; /* Высота для миниатюр будет изменяться автоматически в зависимости от содержимого */
+    }
+
+    .thumb-image {
+        object-fit: cover; /* Миниатюры будут заполнять доступную площадь, не искажая изображения */
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+/* Скрыть боковой слайдер на экранах md и ниже */
+@media (max-width: 767px) {
+    .thumb-swiper {
+        display: none; /* Скрываем боковой слайдер */
+    }
+
+    /* Увеличиваем размер основного слайдера на мобильных устройствах */
+    .main-swiper {
+        flex: 1; /* Теперь основной слайдер занимает всю ширину */
+    }
+}

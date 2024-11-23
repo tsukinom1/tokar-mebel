@@ -1,0 +1,33 @@
+.dev-project {
+    display: flex;
+    align-items: center;
+}
+.dev-project-text{
+    text-align: end;
+    padding-right: 5%;
+}
+.main-btn{
+    padding: 1rem;
+}
+
+
+@media (max-width: 576px) {
+    .dev-project img{
+        display: none;
+    }
+    .dev-project-text{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+    h4{
+        font-weight: bold;
+    }
+    h4, p{
+        font-size: 16px;
+    }
+    .dev-btn{
+        padding: 0.5rem;
+    }
+}

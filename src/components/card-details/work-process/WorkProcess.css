@@ -1,0 +1,33 @@
+.bordered-box {
+    position: relative;
+}
+
+.bordered-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px; /* Длина заостренной части */
+    border-top: 28px solid transparent; /* Половина высоты бокса */
+    border-bottom: 27px solid transparent;
+    border-left: 20px solid var(--orange); /* Цвет заостренной части */
+}
+
+@media (max-width: 992px) {
+    .bordered-box {
+        margin: 0 auto;
+    }
+    .work-process-title {
+        text-align: center;
+    }
+    .work-process-inner {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+
+
+    .work-process-inner {
+        text-align: center;
+    }
+}

@@ -1,0 +1,25 @@
+.card-wrapper{
+    padding: 3%;
+}
+.card-img{
+    width: 100%;
+}
+
+.card-button-wrapper{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .card-button-wrapper{
+        flex-direction: column-reverse;
+        gap: 5px;
+        align-items: start;
+    }
+}
+@media (max-width: 576px) {
+    .card-wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+}

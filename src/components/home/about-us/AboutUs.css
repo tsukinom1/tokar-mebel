@@ -1,0 +1,95 @@
+.back{
+    width: 100%;
+    background-image: url('../../../assets/home/about-us.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.director {
+    height: 470px;
+    transform: translateY(-20%) scale(-1, 1);
+    position: relative;
+    z-index: -1; /* Изображение будет находиться позади */
+}
+.line{
+    border: 1px solid var(--orange);
+    opacity: 1;
+    width: 90%;
+}
+
+
+.overlay-card {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -10%); /* Центрирование карточки */
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1; /* Устанавливаем z-index выше изображения */
+}
+@media screen and (max-width: 992px) {
+    .director {
+        height: 420px;
+    }
+    .overlay-card {
+        top: 60%;
+        left: 50%;
+    }
+    .line{
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .director {
+        margin-top: 100px;
+        height: 300px;
+    }
+    .overlay-card {
+        top: 50%;
+        left: 50%;
+    }
+    .overlay-content{
+        text-align: center;
+        line-height: 1;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .stat-card{
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .line{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+@media (max-width: 577px) {
+    .director {
+        height: 250px;
+    }
+    .overlay-card {
+        top: 50%;
+        left: 50%;
+        width: 90%;
+    }
+    .overlay-content{
+        text-align: center;
+        line-height: 1;
+    }
+    .phrase{
+        width: 10%;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .phrase-text{
+        font-size: 14px;
+    }
+}

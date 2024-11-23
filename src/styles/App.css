@@ -1,0 +1,78 @@
+:root {
+    --white: #ffffff;
+    --orange: #F39C32
+}
+
+html, body {
+    height: 100%;
+}
+#root{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+.s-text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.main-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+
+/* ------ COMMON ------------*/
+.t-orange{
+    color: var(--orange);
+}
+.bg-orange{
+    background-color: var(--orange);
+}
+.lh-30{
+    line-height: 30px;
+}
+.lh-50{
+    line-height: 50px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-30{
+    font-size: 30px;
+}
+.fs-36{
+    font-size: 36px;
+}
+.fs-60{
+    font-size: 60px;
+}
+.ls-2{
+    letter-spacing: 2px;
+}
+
+
+.no-projects-message{
+    text-align: center;
+    margin-top: 10%;
+}
+.no-projects-message h2:hover, .no-projects-message h4:hover{
+    color: var(--orange);
+}
+

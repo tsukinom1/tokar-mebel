@@ -1,0 +1,16 @@
+.title{
+    font-weight: 700;
+    font-size: 24px;
+}
+.text{
+    margin:5px 0;
+    font-size: 20px;
+}
+@media (max-width: 767px) {
+    h2{
+        text-align: center;
+    }
+    .detail-card-content{
+        margin: 0 auto;
+    }
+}

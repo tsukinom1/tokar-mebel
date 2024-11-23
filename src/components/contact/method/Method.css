@@ -1,0 +1,55 @@
+.method-items .d-flex {
+    justify-content: flex-start; /* Выровнять элементы по началу строки */
+    gap: 10px; /* Добавить расстояние между label и link */
+}
+
+.method-items p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.method-items a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #007bff; /* Цвет ссылки */
+}
+
+.method-items a:hover {
+    text-decoration: underline; /* Добавить подчёркивание при наведении */
+}
+
+@media (max-width: 1200px){
+    .img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+    }
+    .text{
+        font-size: 16px ;
+    }
+}
+@media (max-width: 992px){
+    .img{
+        width: 100%;
+    }
+    .text{
+        font-size: 20px ;
+    }
+}
+@media (max-width: 992px){
+    .img{
+        width: 70%;
+    }
+    .text{
+        font-size: 16px ;
+    }
+}@media (max-width: 576px){
+    .img{
+        display: none;
+    }
+    .text{
+        font-size: 16px ;
+    }
+}

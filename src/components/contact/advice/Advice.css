@@ -1,0 +1,11 @@
+.advice{
+    border: 2px solid var(--orange)
+}
+.title{
+    font-size: 24px;
+}
+@media (max-width: 576px) {
+    .title{
+        font-size: 18px;
+    }
+}
